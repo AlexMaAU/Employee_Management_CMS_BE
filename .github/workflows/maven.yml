@@ -11,12 +11,12 @@ name: Java CI with Maven
 
 # 触发条件（on）
 on:
-  # 当代码推送到 main 分支时触发工作流
+  # 当代码推送到 master 分支时触发工作流
   push:
-    branches: [ "main" ]
-  # 当对 main 分支创建拉取请求时触发工作流
+    branches: [ "master" ]
+  # 当对 master 分支创建拉取请求时触发工作流
   pull_request:
-    branches: [ "main" ]
+    branches: [ "master" ]
 
 # GitHub Actions 的权限设置
 permissions:
@@ -38,7 +38,7 @@ jobs:
         image: mysql:5.7
         env:
           MYSQL_ROOT_PASSWORD: mahao123
-          MYSQL_DATABASE: challenge_app  # 确保这里的数据库名称与代码中一致
+          MYSQL_DATABASE: employee_management_cms  # 确保这里的数据库名称与代码中一致
         ports:
           - 3306:3306
         options: >-
