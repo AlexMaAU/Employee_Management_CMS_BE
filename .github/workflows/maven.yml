@@ -38,7 +38,7 @@ jobs:
         image: mysql:5.7
         env:
           MYSQL_ROOT_PASSWORD: mahao123
-          MYSQL_DATABASE: challenge_app  # 确保这里的数据库名称与代码中一致
+          MYSQL_DATABASE: employee_management_cms  # 确保这里的数据库名称与代码中一致
         ports:
           - 3306:3306
         options: >-
