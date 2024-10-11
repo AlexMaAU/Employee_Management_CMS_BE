@@ -11,12 +11,12 @@ name: Java CI with Maven
 
 # 触发条件（on）
 on:
-  # 当代码推送到 master 分支时触发工作流
+  # 当代码推送到 main 分支时触发工作流
   push:
-    branches: [ "master" ]
-  # 当对 master 分支创建拉取请求时触发工作流
+    branches: [ "main" ]
+  # 当对 main 分支创建拉取请求时触发工作流
   pull_request:
-    branches: [ "master" ]
+    branches: [ "main" ]
 
 # GitHub Actions 的权限设置
 permissions:
